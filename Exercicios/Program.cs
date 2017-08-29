@@ -169,7 +169,31 @@ namespace Exercicios
 
             void ex10()
             {
-                //implementar
+                ArrayList salarios = new ArrayList();
+                double reajuste;
+                Console.Write("Digite salário (-1 para sair): ");
+                double valorDigitado = double.Parse(Console.ReadLine());
+
+                if (valorDigitado != -1)
+                {
+                    do
+                    {
+                        salarios.Add(valorDigitado);
+                        Console.Write("Digite salário (-1 para sair): ");
+                        valorDigitado = double.Parse(Console.ReadLine());
+                    } while (valorDigitado != -1);
+
+
+                    Console.Write("Digite Reajuste (em %): ");
+                    reajuste = double.Parse(Console.ReadLine());
+
+
+                    foreach (double valoresReajustados in salarios)
+                    {
+                        double valor = valoresReajustados / 100 * reajuste + valoresReajustados;
+                        Console.WriteLine("R$" + valor);
+                    }
+                }
             }
 
             Console.WriteLine("1 - Calcular e imprimir a soma dos números naturais de 1 ao 100: ");
@@ -187,7 +211,8 @@ namespace Exercicios
             Console.WriteLine("5 - Imprimir a tabuada do número 5 utilizando os 2 tipos de estrutura de repetição FOR e WHILE: ");
             ex5();
             Console.WriteLine();
-            Console.WriteLine("6 - Imprima a tabuada de qualquer número fornecido pelo usuário. Para finalizar utilize o número -1. (Utilize os 2 tipos de repetição: WHILE e FOR: ");
+            Console.WriteLine("6 - Imprima a tabuada de qualquer número fornecido pelo usuário. " +
+                "Para finalizar utilize o número -1. (Utilize os 2 tipos de repetição: WHILE e FOR: ");
             ex6();
             Console.WriteLine();
             Console.WriteLine("7 - Implementar");
@@ -196,10 +221,13 @@ namespace Exercicios
             Console.WriteLine("8 - Implementar");
             ex8();
             Console.WriteLine();
-            Console.WriteLine("9 - Leia um conjunto de alunos, cada uma com o nome e a nota. Em seguida exiba o nome dos alunos que possuem a nota maior do que a média da turma");
+            Console.WriteLine("9 - Leia um conjunto de alunos, cada uma com o nome e a nota. " +
+                "Em seguida exiba o nome dos alunos que possuem a nota maior do que a média da turma");
             ex9();
             Console.WriteLine();
-            Console.WriteLine("10 - Implementar");
+            Console.WriteLine("10 - Leia um conjunto de salários, sendo que para terminar a entrada será fornecido o valor -1. " +
+                "Após toda a entrada ter sido realizada, leia o valor de um reajuste.Em seguida exiba todos os " +
+                "salários já reajustados");
             ex10();
 
             Console.ReadKey();
