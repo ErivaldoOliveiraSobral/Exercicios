@@ -146,10 +146,20 @@ namespace Exercicios
             ex2();
             Console.WriteLine("Calcular e imprimir os números divisíveis por 4 menosres que 100: ");
             ex3();
+            Console.WriteLine("Implementar");
+            ex4();
             Console.WriteLine("Imprimir a tabuada do número 5 utilizando os 2 tipos de estrutura de repetição FOR e WHILE: ");
             ex5();
             Console.WriteLine("Imprima a tabuada de qualquer número fornecido pelo usuário. Para finalizar utilize o número -1. (Utilize os 2 tipos de repetição: WHILE e FOR: ");
             ex6();
+            Console.WriteLine("Implementar");
+            ex7();
+            Console.WriteLine("Implementar");
+            ex8();
+            Console.WriteLine("Implementar");
+            ex9();
+            Console.WriteLine("Implementar");
+            ex10();
 
             Console.Read();
         }
