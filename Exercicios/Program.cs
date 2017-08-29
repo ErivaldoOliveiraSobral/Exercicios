@@ -140,36 +140,35 @@ namespace Exercicios
                 //implementar
             }
 
-            Console.WriteLine("1) Calcular e imprimir a soma dos números naturais de 1 ao 100: ");
+            Console.WriteLine("1 - Calcular e imprimir a soma dos números naturais de 1 ao 100: ");
             ex1();
             Console.WriteLine();
-            Console.WriteLine("2) Imprimir os múltiplos de 7 menores que 200: ");
+            Console.WriteLine("2 - Imprimir os múltiplos de 7 menores que 200: ");
             ex2();
             Console.WriteLine();
-            Console.WriteLine("3) Calcular e imprimir os números divisíveis por 4 menosres que 100: ");
+            Console.WriteLine("3 - Calcular e imprimir os números divisíveis por 4 menosres que 100: ");
             ex3();
             Console.WriteLine();
-            Console.WriteLine("4) Implementar");
+            Console.WriteLine("4 - Implementar");
             ex4();
             Console.WriteLine();
-            Console.WriteLine("5) Imprimir a tabuada do número 5 utilizando os 2 tipos de estrutura de repetição FOR e WHILE: ");
+            Console.WriteLine("5 - Imprimir a tabuada do número 5 utilizando os 2 tipos de estrutura de repetição FOR e WHILE: ");
             ex5();
             Console.WriteLine();
-            Console.WriteLine("6) Imprima a tabuada de qualquer número fornecido pelo usuário. Para finalizar utilize o número -1. (Utilize os 2 tipos de repetição: WHILE e FOR: ");
+            Console.WriteLine("6 - Imprima a tabuada de qualquer número fornecido pelo usuário. Para finalizar utilize o número -1. (Utilize os 2 tipos de repetição: WHILE e FOR: ");
             ex6();
             Console.WriteLine();
-            Console.WriteLine("7) Implementar");
+            Console.WriteLine("7 - Implementar");
             ex7();
             Console.WriteLine();
-            Console.WriteLine("8) Implementar");
+            Console.WriteLine("8 - Implementar");
             ex8();
             Console.WriteLine();
-            Console.WriteLine("9) Implementar");
+            Console.WriteLine("9 - Implementar");
             ex9();
             Console.WriteLine();
-            Console.WriteLine("10) Implementar");
+            Console.WriteLine("10 - Implementar");
             ex10();
-            Console.WriteLine();
 
             Console.ReadKey();
         }
