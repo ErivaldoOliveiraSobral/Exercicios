@@ -81,6 +81,65 @@ namespace Exercicios
                 }
             }
 
+            void ex6()
+            {
+                int num;
+                int[] array = new int[10];
+
+                Console.Write("Digite número (-1 para sair): ");
+                num = int.Parse(Console.ReadLine());
+                
+                while (num != -1)
+                {
+                    //Array com o resultado da tabuada
+                    for (int contador = 1; contador <= 10; contador++)
+                    {
+                        array[contador - 1] = num * contador;
+                    }
+
+                    //Estrutura de repetição FOR
+                    Console.WriteLine("Estrutura de repetição FOR: ");
+                    for (int contador = 1; contador <= 10; contador++)
+                    {
+                        Console.WriteLine(num + "*" + contador + "=" + array[contador - 1]);
+                    }
+
+                    //Estrutura de repetição WHILE
+                    Console.WriteLine("Estrutura de repetição WHILE: ");
+
+                    int count = 1;
+
+                    while (count <= 10)
+                    {
+                        Console.WriteLine(num + "*" + count + "=" + array[count - 1]);
+                        count++;
+                    }
+
+                    Console.Write("Digite número (-1 para sair): ");
+                    num = int.Parse(Console.ReadLine());
+                }
+            }
+
+            void ex7()
+            {
+                //implementar
+            }
+
+            void ex8()
+            {
+                //implementar
+            }
+
+            void ex9()
+            {
+                //implementar
+            }
+
+            void ex10()
+            {
+                //implementar
+            }
+
             Console.WriteLine("Calcular e imprimir a soma dos números naturais de 1 ao 100: ");
             ex1();
             Console.WriteLine("Imprimir os múltiplos de 7 menores que 200: ");
@@ -89,7 +148,8 @@ namespace Exercicios
             ex3();
             Console.WriteLine("Imprimir a tabuada do número 5 utilizando os 2 tipos de estrutura de repetição FOR e WHILE: ");
             ex5();
-
+            Console.WriteLine("Imprima a tabuada de qualquer número fornecido pelo usuário. Para finalizar utilize o número -1. (Utilize os 2 tipos de repetição: WHILE e FOR: ");
+            ex6();
 
             Console.Read();
         }
