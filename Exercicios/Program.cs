@@ -132,7 +132,39 @@ namespace Exercicios
 
             void ex9()
             {
-                //implementar
+                Console.Write("Digite quantidade de alunos: ");
+                int qtdAlunos = int.Parse(Console.ReadLine());
+
+                int indice = 0;
+                string nome;
+                int nota;
+                double media = 0;
+                string[] nomes = new string[qtdAlunos];
+                int[] notas = new int[qtdAlunos];
+
+                do
+                {
+                    Console.Write("Digite nome do Aluno: ");
+                    nomes[indice] = Console.ReadLine();
+                    Console.Write("Digite nota do Aluno: ");
+                    notas[indice] = int.Parse(Console.ReadLine());
+
+                    indice++;
+
+                } while (indice < qtdAlunos);
+
+                foreach (int somaNotas in notas)
+                {
+                    media += somaNotas;
+                }
+
+                double medias = media / qtdAlunos;
+
+                for (int x = 0;x < qtdAlunos;x++)
+                {
+                    if (notas[x] > medias)
+                        Console.WriteLine("Aluno com nota acima da média: " + nomes[x]);
+                }
             }
 
             void ex10()
@@ -164,7 +196,7 @@ namespace Exercicios
             Console.WriteLine("8 - Implementar");
             ex8();
             Console.WriteLine();
-            Console.WriteLine("9 - Implementar");
+            Console.WriteLine("9 - Leia um conjunto de alunos, cada uma com o nome e a nota. Em seguida exiba o nome dos alunos que possuem a nota maior do que a média da turma");
             ex9();
             Console.WriteLine();
             Console.WriteLine("10 - Implementar");
